@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>var 변수/</title>
+</head>
+<style>
+
+</style>
+
+
+
+<body>
+<input id="toggle" type="button" value="night" onclick="
+ if(document.querySelector('#toggle').value === 'night'){
+ document.querySelector('body').style.backgroundColor = 'black';
+ document.querySelector('body').style.color = 'white';
+ document.querySelector('#toggle').value = 'day';
+} else {
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  document.querySelector('#toggle').value = 'night';
+}
+">
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, expedita laudantium. Optio atque itaque eos dolores excepturi est, voluptatem, nesciunt rerum consequatur exercitationem quas nobis maxime dolor consectetur, quae quis.</p>
+
+</body>
+</html>
