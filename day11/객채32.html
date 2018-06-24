@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>객체 32</title>
+</head>
+<style>
+
+</style>
+
+
+
+<body>
+<h1>Object</h1>
+<h2>Create</h2>
+<script type="text/javascript">
+  var coworkers = {
+    "programmer":"egoing",
+    "designer":"leeche",
+  }
+  document.write("programmer : " +coworkers.programmer+"<br />");
+  document.write("designer : " +coworkers.designer+"<br />");
+  coworkers.bookkeeper = "duru";
+  document.write("bookkeeper : "+coworkers.bookkeeper+"<br />");
+  coworkers["data scientist"] = "taeho";
+  document.write("data scientist : "+coworkers["data scientist"]+"<br />");
+
+</script>
+<h2>iterate</h2>
+<script type="text/javascript">
+for(var key in coworkers) {
+  document.write(key+' : '+coworkers[key] + '<br />');
+}
+
+</script>
+<h3>Property & Method</h3>
+
+<script type="text/javascript">
+  coworkers.showAll = function(){
+    for(var key in this) {
+      document.write(key+' : '+coworkers[key] + '<br />');
+    }
+  }
+
+coworkers.showAll();
+</script>
+
+<p>배열은 저장순서가있음 배열은 [] / 객체는 따로 순서가없음 객체는 {}</p>
+
+
+</body>
+</html>
